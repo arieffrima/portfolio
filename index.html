@@ -97,12 +97,72 @@
 										<article>
 											<header>
 												<span class="date">Individual Project</span>
-												<h2>Creating Web<br />
-												Application</h2>
+												<h2>Web Applications<br />
+												Development</h2>
 											</header>
 											<a href="https://github.com/arieffrima/creating-web-applications" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 											<p>
-												In this project, the aim is to create a user-friendly website for an IT company to advertise and manage job openings. The site, built with HTML, CSS, JavaScript, XML, DOM, PHP, and MySQL, follows W3C standards for a solid foundation. Client-side interactivity is improved with JavaScript and DOM manipulation, providing a smooth user experience. PHP on the server side communicates with a MySQL database, effectively managing job listings with detailed position descriptions. The website streamlines the recruitment process by enabling easy online form submissions. Considerations like XML integration and thorough cross-browser testing enhance accessibility and reliability. During deployment, careful web hosting service selection and security measures, such as input validation and best database query practices, are prioritized. Extensive documentation, covering user guides and technical aspects, ensures long-term usability and understanding. The result is a robust, interactive, and secure website benefiting both the IT company and potential candidates in the recruitment process.</p>
+												<p>
+													<strong>BuyOnline</strong> is a simplified web-based online shopping system developed to allow customers to register, log in, and make purchases, as well as store managers to manage product listings and process sold items. This project demonstrates the use of HTML, JavaScript, PHP, XML, and AJAX for client-server communication and data management.
+												</p>
+												
+												<p><strong>Project Structure:</strong></p>
+												<p>
+													The BuyOnline system consists of several HTML, XML, and PHP files that allow customers and store managers to perform various actions within the system. The main components are customer registration, customer login and buying, manager login and listing items, and manager processing sold items.
+												</p>
+												
+												<p><strong>Files:</strong></p>
+												<ul>
+													<li>buyonline.htm: Main page with links to customer registration, customer login, and store manager login.</li>
+													<li>register.htm: Customer registration form where new customers can register with the system.</li>
+													<li>login.htm: Customer login page to authenticate customers and redirect to the buying page.</li>
+													<li>mlogin.htm: Store manager login page to authenticate managers and provide access to item listing and processing functions.</li>
+													<li>buying.htm: Customer buying page displaying available items and allowing customers to add items to the shopping cart.</li>
+													<li>listing.htm: Store manager page to add new items to the store inventory.</li>
+													<li>processing.htm: Store manager page to process sold items and update the inventory.</li>
+													<li>customer.xml: XML file that stores customer information such as customer ID, first name, surname, email, password, and phone number.</li>
+													<li>goods.xml: XML file that stores item information such as item number, name, description, price, quantity available, quantity on hold, and quantity sold.</li>
+													<li>manager.txt: A text file storing manager IDs and passwords.</li>
+												</ul>
+												
+												<p><strong>System Components:</strong></p>
+												<ol>
+													<li><strong>Site Map (buyonline.htm):</strong> Contains links for:
+														<ul>
+															<li>Customer Registration (register.htm)</li>
+															<li>Customer Login (login.htm)</li>
+															<li>Manager Login (mlogin.htm)</li>
+														</ul>
+													</li>
+													<li><strong>Customer Registration (register.htm):</strong>
+														<ul>
+															<li>Customer data is stored in customer.xml.</li>
+															<li>Client-side and server-side validation ensure data integrity.</li>
+															<li>A "back" link allows returning to the main BuyOnline page.</li>
+														</ul>
+													</li>
+													<li><strong>Manager Login and Listing (mlogin.htm, listing.htm):</strong> Store managers log in via manager.txt and can list and process items.</li>
+													<li><strong>Customer Login and Buying (login.htm, buying.htm):</strong> Customers log in, view items, manage carts, and make purchases using AJAX updates every 10 seconds.</li>
+													<li><strong>Manager Processing (processing.htm):</strong> Managers process sold items and update the inventory.</li>
+												</ol>
+												
+												<p><strong>Setup Instructions:</strong></p>
+												<ul>
+													<li>Place all HTML files in the <code>htdocs</code> folder.</li>
+													<li>XML files and <code>manager.txt</code> should be placed in the <code>data</code> folder.</li>
+													<li>PHP files should be placed in the <code>htdocs</code> folder.</li>
+													<li>Start by opening <code>buyonline.htm</code> in your browser.</li>
+												</ul>
+												
+												<p><strong>Additional Information:</strong></p>
+												<ul>
+													<li>Uses session variables for tracking logins.</li>
+													<li>AJAX updates available items on the buying page.</li>
+													<li>Client-side and server-side input validation is implemented.</li>
+												</ul>
+												
+												<p><strong>Notes:</strong> The system does not include payment processing or advanced password management, which may be added in future versions.</p>
+												
 											<ul class="actions special">
 												<li><a href="https://github.com/arieffrima/creating-web-applications" class="button">View Project</a></li>
 											</ul>
